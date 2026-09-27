@@ -5,17 +5,16 @@
     <meta name="color-scheme" content="light only">
     <meta name="format-detection" content="telephone=no">
     <meta name="google" content="notranslate">
-        <title>Wedding  - SpotiLove</title>
-    <meta name="title" content="Wedding  - SpotiLove">
-    <meta name="description" content="tema undangan ala Spotify black hitam and greenminimalist - Undangan Online: Undangan digital modern untuk pernikahan dan acara spesial lainnya. Gratis coba dulu, bayar belakangan!">
-    <meta itemprop="image" content="https://hayustudio.com/themes/spotilove/spotilove.webp">
+        <title>Wedding — Discord Love</title>
+    <meta name="title" content="Wedding — Discord Love">
+    <meta name="description" content="Undangan pernikahan digital bertema Discord dengan nuansa gelap dan blurple yang modern.">
+    <meta itemprop="image" content="images/bg.webp">
         <link rel="icon" type="image/x-icon" href="images/338890-media-1766483607.png">
         <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hayustudio.com/preview/spotilove">
-    <meta property="og:title" content="Wedding  - SpotiLove">
-    <meta property="og:description" content="tema undangan ala Spotify black hitam and greenminimalist - Undangan Online: Undangan digital modern untuk pernikahan dan acara spesial lainnya. Gratis coba dulu, bayar belakangan!">
-    <meta property="og:image" content="images/spotilove.webp">
+    <meta property="og:title" content="Wedding — Discord Love">
+    <meta property="og:description" content="Undangan pernikahan digital bertema Discord dengan nuansa gelap dan blurple yang modern.">
+    <meta property="og:image" content="images/bg.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -25,9 +24,9 @@
         {
           "@context": "https://schema.org/", 
           "@type": "Product", 
-          "name": "Wedding  - SpotiLove",
-          "image": "https://hayustudio.com/themes/spotilove/spotilove.webp",
-          "description": "tema undangan ala Spotify black hitam and greenminimalist - Undangan Online: Undangan digital modern untuk pernikahan dan acara spesial lainnya. Gratis coba dulu, bayar belakangan!",
+          "name": "Wedding — Discord Love",
+          "image": "images/bg.webp",
+          "description": "Undangan pernikahan digital bertema Discord dengan nuansa gelap dan blurple yang modern.",
           "brand": {
             "@type": "Brand",
             "name": "Satu Momen"
@@ -72,14 +71,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Molle&family=Stack+Sans+Notch:wght@200..700&display=swap');
 
 :root {
-    --inv-bg: #000000;
-    --inv-base: #ffffff;
-    --inv-accent: #1abc54;
-    --inv-border: rgb(255 255 255 / 50%);
-    --menu-bg: #2a2a2a;
-    --menu-inactive: #b3b3b3;
+    --inv-bg: #1e1f22;
+    --inv-base: #f2f3f5;
+    --inv-accent: #5865f2;
+    --inv-border: rgb(242 243 245 / 50%);
+    --menu-bg: #2b2d31;
+    --menu-inactive: #b5bac1;
     --menu-active: #ffffff;
-    --btn-color: #121212;
+    --btn-color: #ffffff;
     --font-base: "Inter", sans-serif;
     --font-accent: "Stack Sans Notch", sans-serif;
     --font-latin: "Molle", cursive;
@@ -90,6 +89,46 @@
 .satumomen_menu .satumomen_menu_item.active {
     color: var(--menu-active);
 }
+
+.discord-theme .container-mobile {
+    background-color: var(--inv-bg);
+}
+
+.discord-theme .satumomen_cover .cover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgb(30 31 34 / 18%) 0%, rgb(30 31 34 / 86%) 48%, #1e1f22 100%);
+}
+
+.discord-theme .satumomen_cover .content {
+    isolation: isolate;
+}
+
+.discord-theme .satumomen_cover .content > div {
+    z-index: 1 !important;
+}
+
+.discord-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 14px;
+    padding: 6px 11px;
+    border: 1px solid rgb(88 101 242 / 70%);
+    border-radius: 999px;
+    background: rgb(88 101 242 / 18%);
+    color: #c9cdfb;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+
+.discord-icon { width: 24px; height: 24px; flex: 0 0 auto; }
+.discord-badge .discord-icon { width: 15px; height: 15px; }
+.discord-theme .btn-primary { box-shadow: 0 8px 22px rgb(88 101 242 / 30%); }
+.discord-theme .btn-primary:hover { background-color: #4752c4 !important; border-color: #4752c4 !important; }
 
 .satumomen_track .content {
 min-height: 300px;
@@ -124,7 +163,7 @@ min-height: 300px;
 </head>
 
 <body>
-        <main id="app" class="">
+        <main id="app" class="discord-theme">
         <div id="modalOverlay" class="modal-backdrop fade" style="display: none;"></div>
         <!-- Loader -->
         <div id="loader" class="loader-wrapper"><span class="loader"><span class="loader-inner"></span></span></div>
@@ -139,16 +178,16 @@ min-height: 300px;
                                                                     <li class="container-mobile satumomen_slide satumomen_cover" style="background-image: url(images/bg.webp); ;">
                             <div class="workspace cover">
                                 <div class="content h-100 w-100 mx-auto">
-                                    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 40%, rgba(18, 18, 18, 1) 100%);"></div>
-<div class="position-relative h-100 d-flex justify-content-center align-items-center flex-column" style="z-index:1;"><div class="w-100"><div class="mx-auto mb-4 image-editable justify-content-center animate__animated animate__zoomIn animate__slower" style="width:180px;height:180px;animation-delay:500ms;overflow:hidden;border-radius:100%;">
+                                    <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(30, 31, 34, 0) 0%, rgba(30, 31, 34, .88) 48%, rgba(30, 31, 34, 1) 100%);"></div>
+<div class="position-relative h-100 d-flex justify-content-center align-items-center flex-column" style="z-index:1;"><div class="w-100"><div class="text-center"><span class="discord-badge"><svg class="discord-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.5a16.9 16.9 0 0 0-4.1-1.3l-.5 1a15.7 15.7 0 0 0-4.8 0l-.5-1A16.7 16.7 0 0 0 6.3 4.5C3.7 8.3 3 12 3.3 15.6a16.9 16.9 0 0 0 5 2.5l1.2-1.6a9.4 9.4 0 0 1-1.8-.9l.4-.3c3.5 1.6 7.3 1.6 10.8 0l.5.3c-.6.4-1.2.7-1.9 1l1.2 1.5a16.7 16.7 0 0 0 5-2.5c.4-4.2-.7-7.8-3.4-11.1ZM9.7 13.3c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm4.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>DISCORD LOVE</span></div><div class="mx-auto mb-4 image-editable justify-content-center animate__animated animate__zoomIn animate__slower" style="width:180px;height:180px;animation-delay:500ms;overflow:hidden;border-radius:28px;box-shadow:0 16px 38px rgb(0 0 0 / 35%);">
     
 
 
-<img src="images/729151-gallery-7w8HCfFRxW.gif" class="h-100 w-100" style="transform: scale(3);     object-fit: cover;" alt="729151-gallery-7w8HCfFRxW.gif"></div><div class="text-center editable h4 mb-4 font-weight-bold animate__animated animate__fadeInDown animate__slower" style="font-size:24px;">Stream our love story.<br>Groom &amp; Bride.</div><div class="text-center editable animate__animated animate__fadeInDown animate__slower" style="font-size:16px;">on the special playlist:</div><div class="text-center editable mb-5 font-weight-bold animate__animated animate__fadeInUp animate__slower" style="font-size:16px;" id="guestNameSlot">Forever anthem.</div></div><div class="w-100"><div class="text-center"> <button class="btn-block btn-open-invitation btn btn-primary animate__animated animate__fadeInUp animate__slow" style="border-radius: 10rem;">
+<img src="images/729151-gallery-7w8HCfFRxW.gif" class="h-100 w-100" style="transform: scale(3); object-fit: cover;" alt="Foto pasangan Indra dan Yunita"></div><div class="text-center editable h4 mb-3 font-weight-bold animate__animated animate__fadeInDown animate__slower" style="font-size:24px;">You&apos;re invited to our<br>forever server.</div><div class="text-center editable animate__animated animate__fadeInDown animate__slower" style="font-size:16px;">a channel created for:</div><div class="text-center editable mb-5 font-weight-bold animate__animated animate__fadeInUp animate__slower" style="font-size:16px;" id="guestNameSlot">Nama Tamu</div></div><div class="w-100"><div class="text-center"> <button class="btn-block btn-open-invitation btn btn-primary animate__animated animate__fadeInUp animate__slow" style="border-radius: 10rem;">
     
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 44 44" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;width: 24px;"><path d="M21.955,0c12.119,0 21.955,9.835 21.955,21.955c-0,12.119 -9.836,21.955 -21.955,21.955c-12.12,-0 -21.955,-9.836 -21.955,-21.955c0,-12.12 9.835,-21.955 21.955,-21.955Zm-0.84,36.828l4.849,-3.983c1.575,-1.294 1.803,-3.619 0.509,-5.194l-0,-0.001c-0.622,-0.756 -1.518,-1.234 -2.492,-1.33c-0.974,-0.095 -1.946,0.2 -2.703,0.822l-0.045,0.037l-0.037,-0.046c-1.294,-1.575 -3.62,-1.802 -5.195,-0.509c-1.575,1.294 -1.803,3.62 -0.509,5.195l3.983,4.848c0.409,0.498 1.143,0.57 1.64,0.161Zm14.88,-17.078c1.08,0 2.054,-0.858 2.054,-2.062c0,-1.054 -0.451,-1.603 -1.142,-2.001c-4.949,-2.886 -11.721,-4.232 -18.183,-4.232c-3.798,0 -7.286,0.434 -10.402,1.346c-0.797,0.23 -1.541,0.912 -1.541,2.116c0,1.177 0.894,2.089 2.063,2.089c0.425,0 0.823,-0.142 1.142,-0.23c7.295,-2.036 18.564,-1.133 24.867,2.629c0.399,0.23 0.682,0.345 1.142,0.345Zm-2.744,6.746c0.965,0 1.708,-0.77 1.717,-1.726c0,-0.77 -0.283,-1.319 -1,-1.744c-4.373,-2.603 -9.924,-4.028 -15.669,-4.028c-3.683,-0 -6.197,0.513 -8.658,1.204c-0.912,0.257 -1.373,0.885 -1.373,1.832c0,0.948 0.771,1.718 1.718,1.718c0.398,-0 0.628,-0.115 1.053,-0.23c7.339,-1.992 15.59,-0.673 21.123,2.602c0.319,0.169 0.629,0.372 1.089,0.372Z" style="fill:currentColor;"></path></svg>
+    <svg class="discord-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.5a16.9 16.9 0 0 0-4.1-1.3l-.5 1a15.7 15.7 0 0 0-4.8 0l-.5-1A16.7 16.7 0 0 0 6.3 4.5C3.7 8.3 3 12 3.3 15.6a16.9 16.9 0 0 0 5 2.5l1.2-1.6a9.4 9.4 0 0 1-1.8-.9l.4-.3c3.5 1.6 7.3 1.6 10.8 0l.5.3c-.6.4-1.2.7-1.9 1l1.2 1.5a16.7 16.7 0 0 0 5-2.5c.4-4.2-.7-7.8-3.4-11.1ZM9.7 13.3c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm4.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
     
-    <span>Open Invitation</span>
+    <span>Join the Celebration</span>
     </button><button class="btn-block btn-rsvp btn animate__animated animate__fadeInUp animate__slow" style="border-radius: 10rem;     border: 1px solid var(--inv-border);     color: var(--inv-border);">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width: 24px;">
@@ -435,7 +474,7 @@ min-height: 300px;
 
           <button class="btn-rsvp btn btn-primary animate__animated animate__fadeInUp animate__slow" style="border-radius: 10rem;">
     
-    <svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;width: 24px;" xml:space="preserve" viewBox="0 0 44 44" height="100%" width="100%" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><path d="M21.955,0c12.119,0 21.955,9.835 21.955,21.955c-0,12.119 -9.836,21.955 -21.955,21.955c-12.12,-0 -21.955,-9.836 -21.955,-21.955c0,-12.12 9.835,-21.955 21.955,-21.955Zm-0.84,36.828l4.849,-3.983c1.575,-1.294 1.803,-3.619 0.509,-5.194l-0,-0.001c-0.622,-0.756 -1.518,-1.234 -2.492,-1.33c-0.974,-0.095 -1.946,0.2 -2.703,0.822l-0.045,0.037l-0.037,-0.046c-1.294,-1.575 -3.62,-1.802 -5.195,-0.509c-1.575,1.294 -1.803,3.62 -0.509,5.195l3.983,4.848c0.409,0.498 1.143,0.57 1.64,0.161Zm14.88,-17.078c1.08,0 2.054,-0.858 2.054,-2.062c0,-1.054 -0.451,-1.603 -1.142,-2.001c-4.949,-2.886 -11.721,-4.232 -18.183,-4.232c-3.798,0 -7.286,0.434 -10.402,1.346c-0.797,0.23 -1.541,0.912 -1.541,2.116c0,1.177 0.894,2.089 2.063,2.089c0.425,0 0.823,-0.142 1.142,-0.23c7.295,-2.036 18.564,-1.133 24.867,2.629c0.399,0.23 0.682,0.345 1.142,0.345Zm-2.744,6.746c0.965,0 1.708,-0.77 1.717,-1.726c0,-0.77 -0.283,-1.319 -1,-1.744c-4.373,-2.603 -9.924,-4.028 -15.669,-4.028c-3.683,-0 -6.197,0.513 -8.658,1.204c-0.912,0.257 -1.373,0.885 -1.373,1.832c0,0.948 0.771,1.718 1.718,1.718c0.398,-0 0.628,-0.115 1.053,-0.23c7.339,-1.992 15.59,-0.673 21.123,2.602c0.319,0.169 0.629,0.372 1.089,0.372Z" style="fill: currentColor;"></path></svg>
+    <svg class="discord-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.5a16.9 16.9 0 0 0-4.1-1.3l-.5 1a15.7 15.7 0 0 0-4.8 0l-.5-1A16.7 16.7 0 0 0 6.3 4.5C3.7 8.3 3 12 3.3 15.6a16.9 16.9 0 0 0 5 2.5l1.2-1.6a9.4 9.4 0 0 1-1.8-.9l.4-.3c3.5 1.6 7.3 1.6 10.8 0l.5.3c-.6.4-1.2.7-1.9 1l1.2 1.5a16.7 16.7 0 0 0 5-2.5c.4-4.2-.7-7.8-3.4-11.1ZM9.7 13.3c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm4.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg>
     
     <span>Konfirmasi Kehadiran</span>
     </button>
@@ -578,7 +617,7 @@ min-height: 300px;
     
 
 
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 223 223" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;color: var(--inv-accent);"><path d="M111.183,0c61.374,0 111.182,49.808 111.182,111.183c0,61.374 -49.808,111.182 -111.182,111.182c-61.375,0 -111.183,-49.808 -111.183,-111.182c0,-61.375 49.808,-111.183 111.183,-111.183Zm-4.252,186.504l24.555,-20.172c7.975,-6.552 9.129,-18.329 2.577,-26.304l-0.001,-0.001c-3.146,-3.831 -7.686,-6.254 -12.619,-6.737c-4.933,-0.484 -9.856,1.013 -13.687,4.159l-0.229,0.188l-0.188,-0.229c-6.552,-7.976 -18.33,-9.13 -26.306,-2.577c-7.976,6.552 -9.13,18.33 -2.577,26.306l20.171,24.553c2.069,2.518 5.786,2.882 8.304,0.814Zm75.355,-86.484c5.469,-0 10.401,-4.349 10.401,-10.446c-0,-5.335 -2.287,-8.115 -5.784,-10.132c-25.06,-14.615 -59.357,-21.43 -92.084,-21.43c-19.233,0 -36.896,2.197 -52.677,6.815c-4.035,1.165 -7.801,4.617 -7.801,10.714c0,5.963 4.528,10.581 10.446,10.581c2.152,-0 4.169,-0.718 5.783,-1.166c36.942,-10.311 94.012,-5.738 125.933,13.315c2.017,1.166 3.452,1.749 5.783,1.749Zm-13.898,34.161c4.887,0 8.653,-3.9 8.697,-8.742c0,-3.9 -1.434,-6.68 -5.066,-8.832c-22.147,-13.18 -50.256,-20.398 -79.352,-20.398c-18.65,-0 -31.382,2.6 -43.845,6.097c-4.618,1.3 -6.949,4.483 -6.949,9.28c-0,4.797 3.9,8.698 8.697,8.698c2.018,-0 3.183,-0.583 5.335,-1.166c37.166,-10.087 78.949,-3.407 106.969,13.18c1.614,0.852 3.183,1.883 5.514,1.883Z" style="fill:currentColor;"></path></svg></div><div class="text-center">
+<svg class="discord-icon" style="width:100%;height:100%;color:var(--inv-accent);" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.3 4.5a16.9 16.9 0 0 0-4.1-1.3l-.5 1a15.7 15.7 0 0 0-4.8 0l-.5-1A16.7 16.7 0 0 0 6.3 4.5C3.7 8.3 3 12 3.3 15.6a16.9 16.9 0 0 0 5 2.5l1.2-1.6a9.4 9.4 0 0 1-1.8-.9l.4-.3c3.5 1.6 7.3 1.6 10.8 0l.5.3c-.6.4-1.2.7-1.9 1l1.2 1.5a16.7 16.7 0 0 0 5-2.5c.4-4.2-.7-7.8-3.4-11.1ZM9.7 13.3c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm4.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg></div><div class="text-center">
         
         <div class="editable quotes mb-3 animate__animated animate__fadeInDown animate__slower" style="font-size:14.4px;color:rgba(255, 255, 255, 0.71);">    Kami mengucapkan terima kasih atas kehadiran Anda dalam perayaan pernikahan kami. Kami sangat berterima kasih atas kehadiran, doa restu, dan hadiah yang telah Anda berikan. Kami menantikan masa depan kami bersama dan menciptakan lebih banyak kenangan dengan Anda.<br></div><div class="editable animate__animated animate__fadeInDown animate__slow" style="font-size:14.4px;color:rgba(255, 255, 255, 0.71);">See You On Our Big Day</div>
     
